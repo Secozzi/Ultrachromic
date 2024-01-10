@@ -23,3 +23,7 @@
     display: block;
     border-radius: 0 0 5px 5px;
 }
+
+.detailPageContent .cardBox .cardIndicators {
+    --rounding: 5px !important;
+}

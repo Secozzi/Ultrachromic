@@ -1,0 +1,105 @@
+/* Base Ultrachromic */
+@import url('https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/jf_font.css');
+@import url('https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/fixes.css');
+@import url('https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/base.css');
+@import url('https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/rounding.css');
+@import url('https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/smallercast.css');
+@import url('https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/episodelist/episodes_compactlist.css');
+@import url('https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/header/header_transparent-dashboard.css');
+@import url('https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/header/header_transparent.css');
+@import url('https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/login/login_minimalistic.css');
+@import url('https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/fields/fields_border.css');
+@import url('https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/cornerindicator/indicator_corner.css');
+@import url('https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/type/dark.css');
+@import url('https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/overlayprogress.css');
+@import url('https://cdn.jsdelivr.net/gh/prayag17/Jellyfin-Icons/round.css');
+
+/* Add multiline season title */
+@import url('https://cdn.jsdelivr.net/gh/Secozzi/Ultrachromic/seasontitle/multiline.css');
+
+:root {
+    --rounding: 5px;
+}
+
+/* === Remove stuff === */
+
+/* Remove cast */
+#castCollapsible {
+    display: none;
+}
+
+/* Remove similar */
+#similarCollapsible {
+    display: none;
+}
+
+/* Remove sync */
+.headerSyncButton {
+    display: none;
+}
+
+/* Remove profile */
+.headerRight .headerButton:has(span.person) {
+    display: none;
+}
+
+/* Remove tags */
+.detailSectionContent > .itemTags {
+    display: none;
+}
+
+/* Remove directors */
+.itemDetailsGroup > .directorsGroup {
+    display: none;
+}
+
+/* Remove "Aired on" */
+.detailSectionContent > #seriesAirTime {
+    display: none;
+}
+
+/* === Small tweaks === */
+
+/* Limit info width */
+.detailSectionContent {
+    max-width: 66em;
+}
+
+/* Reduce space between description and title */
+.detailPageSecondaryContainer {
+    margin-top: 0px !important;
+}
+
+/* Allow series titles to use two lines */
+#seriesTab .cardBox .cardText {
+    white-space: normal;
+    max-height: 40px; 
+}
+
+/* Blur and darken the backdrop */
+.backdropImage {
+    filter: blur(10px) saturate(120%) contrast(120%) brightness(45%);
+}
+
+#itemBackdrop {
+    filter: blur(10px) saturate(120%) contrast(120%) brightness(45%);
+}
+
+/* Remove top overlay */
+.detailPagePrimaryContainer {
+    background: rgba(0,0,0,0) !important;
+}
+
+.layout-desktop .detailRibbon {
+    background: rgba(0,0,0,0) !important;
+}
+
+@media all and (min-width: 32em) {
+    .itemBackdrop {
+        display: none;
+    }
+
+    .layout-desktop .detailRibbon {
+        margin-top: 13vh;
+    }
+}
