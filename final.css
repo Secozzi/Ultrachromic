@@ -38,11 +38,6 @@
     display: none;
 }
 
-/* Remove profile */
-.headerRight .headerButton:has(span.person) {
-    display: none;
-}
-
 /* Remove tags */
 .detailSectionContent > .itemTags {
     display: none;
