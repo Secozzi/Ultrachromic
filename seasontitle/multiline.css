@@ -1,4 +1,4 @@
-.detailPageContent .cardBox > .cardText {
+.detailPageContent .cardBox > .cardText, #seriesTab .cardBox > .cardText {
     background-color: rgba(0,0,0,0.5);
 }
 
@@ -15,7 +15,7 @@
     max-height: 60px;
 }
 
-.detailPageContent .cardBox::after {
+.detailPageContent .cardBox::after, #seriesTab .cardBox::after {
     content: "";
     height: 6px;
     width: 100%;
