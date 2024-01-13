@@ -1,4 +1,4 @@
-.detailPageContent .cardBox > .cardText, #seriesTab .cardBox > .cardText {
+.detailPageContent .cardBox > .cardText, #homeTab .cardBox > .cardText, #seriesTab .cardBox > .cardText {
     background-color: rgba(0,0,0,0.5);
 }
 
@@ -6,7 +6,7 @@
     white-space: normal;
 }
 
-.detailPageContent .cardBox > .cardScalable {
+.detailPageContent .cardBox > .cardScalable, #homeTab .cardBox > .cardScalable, #seriesTab .cardBox > .cardScalable {
     --rounding: 5px 5px 0 0 !important;
 }
 
@@ -15,15 +15,15 @@
     max-height: 60px;
 }
 
-.detailPageContent .cardBox::after, #seriesTab .cardBox::after {
+.detailPageContent .cardBox::after, #homeTab .cardBox::after, #seriesTab .cardBox::after {
     content: "";
-    height: 6px;
+    height: 8px;
     width: 100%;
     background-color: rgba(0,0,0,0.5);
     display: block;
     border-radius: 0 0 5px 5px;
 }
 
-.detailPageContent .cardBox .cardIndicators {
+.detailPageContent .cardBox .cardIndicators, #homeTab .cardBox .cardIndicators, #seriesTab .cardBox .cardIndicators {
     --rounding: 5px !important;
 }
