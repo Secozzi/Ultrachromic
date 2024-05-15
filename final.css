@@ -53,6 +53,11 @@
     display: none;
 }
 
+/* Remove studios for season */
+.detailSection:not(:has(div.itemExternalLinks > a)) .studiosGroup {
+    display: none;
+}
+
 /* === Small tweaks === */
 
 /* Add shadow to series image */
@@ -90,10 +95,12 @@
     background: rgba(0,0,0,0) !important;
 }
 
+/* Remove background for series title ribbon */
 .layout-desktop .detailRibbon {
     background: rgba(0,0,0,0) !important;
 }
 
+/* Move series title ribbon up */
 @media all and (min-width: 32em) {
     .itemBackdrop {
         display: none;
@@ -102,4 +109,9 @@
     .layout-desktop .detailRibbon {
         margin-top: 13vh;
     }
+}
+
+/* Fix episode counter */
+.cardIndicators {
+    right: 0 !important;
 }
