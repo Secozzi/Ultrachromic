@@ -2,7 +2,7 @@
     background-color: rgba(0,0,0,0.5);
 }
 
-.detailPageContent .cardBox button {
+.cardBox a {
     white-space: normal;
 }
 
@@ -26,4 +26,14 @@
 
 .detailPageContent .cardBox .cardIndicators, #homeTab .cardBox .cardIndicators, #seriesTab .cardBox .cardIndicators {
     --rounding: 5px !important;
+}
+
+.childrenItemsContainer .cardText-first, #seriesTab .cardText-first {
+    padding-top: 2px !important;
+    padding-bottom: 4px !important;
+}
+
+.nextUpItems .cardText-first {
+    padding-top: 6px !important;
+    padding-bottom: 2px !important;
 }
